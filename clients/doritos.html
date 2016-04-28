@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head lang="en">
+	<!-- Standard Meta -->
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Site Properities -->
+	<title>Motive A Creative Studio | Doritos</title>
+	<meta name="description" content="Test" />
+	<meta name="keywords" content="place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website" />
+
+	<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+
+	<!-- DocPad Meta -->
+	<meta name="generator" content="DocPad v6.75.2" />
+
+	<!-- DocPad Styles + Our Own -->
+	<style >html.wait {
+	cursor: wait !important;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}</style><link  rel="stylesheet" href="/styles/app.css" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+</head>
+<body>
+	<!--[if lt IE 7]>
+	<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+
+	<nav class="navbar fixed-top collapsed no-bg">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" data-toggle="collapse" data-target="#nav-collapse" aria-expanded="false" class="navbar-toggle collapsed">
+					<span class="sr-only">Toggle navigation</span>
+					<div class="icon">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</button><a href="/" class="navbar-logo">Motive</a>
+			</div>
+		</div>
+		<div id="nav-collapse" class="collapse navbar-collapse">
+			<div class="row">
+				<div class="col-sm-4">
+					<h3 class="title"><a href="/work">Our Work</a></h3>
+					<ul>
+						<li> <a data-modal="modal-slide-reel" data-title="reel">Watch our Reel</a></li>
+						<li> <a href="/work">Big Moments</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-4">
+					<h3 class="title"><a href="/about">About Us</a></h3>
+					<ul>
+						<li> <a href="/about#reasons">Why Work With Us</a></li>
+						<li> <a href="/about#team">Our Team</a></li>
+						<li> <a href="/about#motivistas">Our Culture</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-4">
+					<h3 class="title">Contact Us</h3>
+					<ul>
+						<li> <a href="mailto:info@thinkmotive.com" target="_blank">info@thinkmotive.com</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	
+
+	<footer>
+	<div class="row">
+		<div class="col-md-15 col-sm-3"><img src="/images/logo.svg" class="logo"/>
+			<div class="row social">
+				<div class="col-sm-15 col-xs-3"><a href="https://www.facebook.com/thinkmotive" target="_blank"><img src="/images/social-facebook.svg"/></a></div>
+				<div class="col-sm-15 col-xs-3"><a href="https://twitter.com/thinkmotive" target="_blank"><img src="/images/social-twitter.svg"/></a></div>
+				<div class="col-sm-15 col-xs-3"><a href="https://www.instagram.com/thinkmotive/" target="_blank"><img src="/images/social-instagram.svg"/></a></div>
+				<div class="col-sm-15 col-xs-3"><a href="https://vimeo.com/thinkmotive" target="_blank"><img src="/images/social-vine.svg"/></a></div>
+			</div>
+		</div>
+		<div class="col-md-15 col-sm-3 location">
+			<h3>Denver:</h3>
+			<p>2901 Blake / STE 180<br>303.302.2100</p><a href="#" class="text-underline directions">Directions</a>
+		</div>
+		<div class="col-md-15 col-sm-3 location">
+			<h3>New York:</h3>
+			<p>11 East 26th St. / 10th Floor<br>212.401.7800</p><a href="#" class="text-underline directions">Directions</a>
+		</div>
+		<div class="col-md-15 col-sm-3 location"><a href="mailto:info@thinkmotive.com" target="_blank">info@thinkmotive.com</a></div>
+	</div>
+</footer>
+
+	<!-- DocPad Scripts + Our Own -->
+	<script >(function(){
+	/* Did we just livereload? */
+var log = !!(localStorage && console && console.log && true);
+if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
+	localStorage.removeItem('/docpad-livereload/reloaded');
+	console.log('LiveReload completed at', new Date())
+}
+
+/* Listen for the regenerated event and perform a reload of the page when the event occurs */
+var listen = function(){
+	var primus = new Primus('/docpad-livereload');
+	primus.on('data', function(data){
+		if ( data && data.message ) {
+			if ( data.message === 'generateBefore' ) {
+				if ( log ) {
+					console.log('LiveReload started at', new Date());
+				}
+				if ( typeof document.getElementsByTagName !== 'undefined' ) {
+	document.getElementsByTagName('html')[0].className += ' wait';
+}
+			}
+			else if ( data.message === 'generateAfter' ) {
+				if ( log ) {
+					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
+				}
+				document.location.reload();
+			}
+		}
+	});
+};
+	/* Inject socket into our page */
+var inject = function(){
+	var t = document.createElement('script');
+	t.type = 'text/javascript';
+	t.async = 'async';
+	t.src = '/primus/primus.js';
+	t.onload = listen;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t, s);
+};
+	if ( typeof Primus !== 'undefined' ) {
+		listen();
+	} else {
+		inject();
+	}
+})();</script><!-- jQuery -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/vendor/jquery.js"><\/script>')</script><script defer="defer"  src="/vendor/log.js"></script><script defer="defer"  src="http://vjs.zencdn.net/5.6.0/video.js"></script><script defer="defer"  src="/scripts/app.js"></script>
+
+	<!--[if IE]>
+		<script type="text/javascript" src="/scripts/fitie.js"></script>
+	<![endif]-->
+	
+</body>
+</html>
