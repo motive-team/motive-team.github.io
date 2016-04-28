@@ -6519,7 +6519,6 @@ svg.gray-darkest {
 /* Animations */
 section.cool-shit {
   position: relative;
-  height: 780px;
   overflow: hidden; }
   section.cool-shit .items {
     padding: 0 7%; }

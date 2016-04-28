@@ -463,7 +463,10 @@ function loadInstagram(el) {
 function buildInstagramTemplates(el, items) {
     var itemsDiv = el.find('.items');
     console.log('building', el, itemsDiv, items);
-    for (var i = items.length - 1; i >= 0; i--) {
+    /*for (var i = items.length - 1; i >= 0; i--) {
+        itemsDiv.append(getInstgramTemplate(items[i]));
+    }*/
+    for (var i = 0; i < items.length; i++) {
         itemsDiv.append(getInstgramTemplate(items[i]));
     }
 }
