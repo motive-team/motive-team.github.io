@@ -415,8 +415,6 @@ $(document).ready(function() {
     })(jQuery);
 
 });
-
-
 $(document).ready(function() {
 
     var el = $('.cool-shit');
@@ -432,9 +430,14 @@ $(document).ready(function() {
 });
 
 function loadInstagram(el) {
+    var add;
+    if (typeof window.orientation !== 'undefined') {
+        add = "&count=6";
+    }
+
     // Pull instagram media
     $.ajax({
-        url: "https://api.instagram.com/v1/users/312280309/media/recent/?access_token=312280309.c53e60a.306caa022104488b910eb29dc6f7b537",
+        url: "https://api.instagram.com/v1/users/312280309/media/recent/?access_token=312280309.c53e60a.306caa022104488b910eb29dc6f7b537" + add,
 
         // The name of the callback parameter, as specified by the YQL service
         jsonp: "callback",

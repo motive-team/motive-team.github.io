@@ -1400,7 +1400,9 @@ a {
   cursor: pointer; }
 
 section {
-  position: relative; }
+  position: relative;
+  width: 100%;
+  overflow-x: hidden; }
   section.fullscreen {
     padding: 0; }
 
@@ -5311,7 +5313,9 @@ svg.gray-darkest {
 .section-title {
   background: url("../images/title-bg.jpg") no-repeat;
   background-size: cover;
+  width: 100%;
   height: 150px;
+  overflow-x: hidden;
   position: relative;
   color: #cccccc; }
   .section-title.no-bg {
@@ -5962,14 +5966,19 @@ section.services h2 {
 section.services h5 {
   font-size: 16px; }
 
-@media (max-width: 479px) {
-  section.services .service {
-    padding: 20px; }
-    section.services .service h5 {
-      font-size: 12px; } }
+section.services .service {
+  height: 120px; }
+  @media (max-width: 479px) {
+    section.services .service {
+      padding: 20px; }
+      section.services .service h5 {
+        font-size: 12px; } }
+  section.services .service img {
+    height: 40px; }
 
-section.services .service img {
-  height: 40px; }
+@media (max-width: 479px) {
+  section.services section.services .service {
+    height: 120px; } }
 
 section.services p {
   line-height: 26px; }
@@ -6163,6 +6172,8 @@ section.big-moments .item {
     -ms-transform: translateX(0%);
     transform: translateX(0%); }
   section.big-moments .feature.split .item {
+    width: 100%;
+    overflow: hidden;
     position: relative;
     left: 0;
     right: 0 !important;
@@ -6181,6 +6192,9 @@ section.big-moments .item {
     -webkit-transform: none;
     -ms-transform: none;
     transform: none; }
+    section.big-moments .feature.split .item .description .content {
+      margin-left: auto;
+      margin-right: auto; }
   section.big-moments .feature .item .grad {
     display: none; } }
 
@@ -6346,6 +6360,9 @@ section.clients .client {
   margin: 20px 0;
   text-align: center;
   padding: 25px; }
+  @media (max-width: 767px) {
+    section.clients .client {
+      padding: 10px; } }
   section.clients .client img {
     width: 100%;
     -webkit-filter: grayscale(100%);
@@ -6748,9 +6765,9 @@ section.team .person {
       section.team .person .details, section.team .person .overlay {
         opacity: 1; }
       section.team .person .overlay {
-        top: 76% !important; }
+        top: 80% !important; }
       section.team .person .details {
-        bottom: 5%; } }
+        bottom: 3%; } }
   @media (width: 768px) {
     section.team .person .overlay {
       top: 70% !important; }
