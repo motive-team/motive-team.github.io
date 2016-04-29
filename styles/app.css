@@ -6769,9 +6769,15 @@ section.team .person {
       section.team .person .details, section.team .person .overlay {
         opacity: 1; }
       section.team .person .overlay {
-        top: 80% !important; }
+        top: 80% !important;
+        display: none; }
       section.team .person .details {
-        bottom: 3%; } }
+        bottom: 3%;
+        position: relative;
+        padding-bottom: 15px;
+        margin-top: -5px;
+        height: 20%;
+        background: rgba(0, 0, 0, 0.7); } }
   @media (width: 768px) {
     section.team .person .overlay {
       top: 70% !important; }

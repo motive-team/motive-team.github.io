@@ -336,6 +336,7 @@ $(document).ready(function() {
 
         $('nav.navbar').addClass('collapsed');
         $('.navbar-header .icon').removeClass('open');
+        window.previousScrollPos = $(window).scrollTop();
     }
 
     $('.modal button.close').click(function(e) {
@@ -358,6 +359,10 @@ $(document).ready(function() {
         }*/
 
         window.location.hash = '';
+
+        if (window.previousScrollPos) {
+            $(window).scrollTop(window.previousScrollPos);
+        }
     });
 
     //$('video').click(function(){this.paused?this.play():this.pause();});
@@ -396,11 +401,20 @@ $(document).ready(function() {
 
     function toggleLogos() {
         if (h) {
+        	if($('#home-head-video').length > 0) {
+        		if ($(window).scrollTop() > 100) {
+	        		$('.navbar-logo').css('opacity', 1);
+	        	}else{
+	        		$('.navbar-logo').css('opacity', 0);
+	        	}
+        	}
+        	
+
             if ($(window).scrollTop() >= logoThreshold) {
-                $('.navbar-logo').css('opacity', 1);
+                //$('.navbar-logo').css('opacity', 1);
                 $('#home-head-video video').get(0).pause();
             } else {
-                $('.navbar-logo').css('opacity', 0);
+                //$('.navbar-logo').css('opacity', 0);
                 $('#home-head-video video').get(0).play();
             }
         } else {
@@ -469,7 +483,7 @@ $(document).ready(function() {
 });
 
 function loadInstagram(el) {
-    var add;
+    var add = '';
     if (typeof window.orientation !== 'undefined') {
         add = "&count=6";
     }
