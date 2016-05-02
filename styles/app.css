@@ -6558,9 +6558,8 @@ section.cool-shit {
       section.cool-shit .items .item .caption {
         color: white;
         position: absolute;
-        top: 20px;
         left: 20px;
-        bottom: 91px;
+        bottom: 20px;
         right: 10px;
         overflow: hidden; }
       section.cool-shit .items .item .likes {
