@@ -222,6 +222,10 @@ $(document).ready(function() {
         $('.navbar').toggleClass('collapsed');
     });
 
+    $('.navbar li a').click(function(el) {
+        $('.navbar').toggleClass('collapsed');
+    });
+
     // Scroll functions
     $(window).scroll(function() {
         var pos = $(window).scrollTop();
@@ -401,14 +405,14 @@ $(document).ready(function() {
 
     function toggleLogos() {
         if (h) {
-        	if($('#home-head-video').length > 0) {
-        		if ($(window).scrollTop() > 100) {
-	        		$('.navbar-logo').css('opacity', 1);
-	        	}else{
-	        		$('.navbar-logo').css('opacity', 0);
-	        	}
-        	}
-        	
+            if ($('#home-head-video').length > 0) {
+                if ($(window).scrollTop() > 100) {
+                    $('.navbar-logo').css('opacity', 1);
+                } else {
+                    $('.navbar-logo').css('opacity', 0);
+                }
+            }
+
 
             if ($(window).scrollTop() >= logoThreshold) {
                 //$('.navbar-logo').css('opacity', 1);

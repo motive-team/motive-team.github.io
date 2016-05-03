@@ -3925,6 +3925,9 @@ svg.gray-darkest {
     display: block;
     opacity: 0;
     transition: opacity 250ms; }
+    @media (max-width: 479px) {
+      .navbar .navbar-logo {
+        opacity: 1 !important; } }
     .navbar .navbar-logo.no-transition {
       transition: none; }
   .navbar .navbar-header {
