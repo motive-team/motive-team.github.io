@@ -5988,7 +5988,8 @@ section.services .service {
     height: 120px; } }
 
 section.services p {
-  line-height: 26px; }
+  line-height: 26px;
+  padding: 0 1px; }
 
 section.services .seperator-h {
   margin: 40px 0; }
