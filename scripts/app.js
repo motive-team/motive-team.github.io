@@ -119,6 +119,11 @@ $(document).ready(function() {
         $('body').addClass('app');
     }
 
+    if ($(window).scrollTop() > 0) {
+        console.log('scroll adjustment in progress');
+        $(window).scrollTop($(window).scrollTop() + 1);
+    }
+
     // Instantiate carousels
     $('.carousel').not('.home-carousel').slick({
         cssEase: 'ease-in-out',
