@@ -7662,9 +7662,22 @@ footer {
       text-align: center; }
       footer .location {
         padding-top: 30px; } }
+  footer .location.project {
+    text-align: center;
+    color: white;
+    font-size: 15px; }
+    footer .location.project img {
+      width: 100%;
+      max-width: 200px; }
   footer .logo {
     height: 55px;
     max-width: 100%; }
+  footer .email {
+    margin-top: 10px; }
+    footer .email a {
+      margin-left: 16px;
+      font-size: 15px;
+      text-transform: uppercase; }
   footer h3 {
     margin-top: 0;
     font-size: 16px; }
