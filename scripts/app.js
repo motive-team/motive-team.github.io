@@ -499,7 +499,7 @@ function loadInstagram(el) {
 
     // Pull instagram media
     $.ajax({
-        url: "https://api.instagram.com/v1/users/312280309/media/recent/?access_token=312280309.1677ed0.fa56891d2eb64600b0b34cad8e1c0d03" + add,
+        url: "https://api.instagram.com/v1/users/312280309/media/recent/?access_token=312280309.c53e60a.d31b9a414fb94131bd7e4ece6b2a0924" + add,
 
         // The name of the callback parameter, as specified by the YQL service
         jsonp: "callback",
