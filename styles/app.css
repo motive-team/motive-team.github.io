@@ -8069,6 +8069,10 @@ svg.gray-darkest {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: -998; }
+	z-index: -998; }
+	
+.privacy-policy {
+	font-size: 10px;
+}
 
 /*# sourceMappingURL=app.css.map */
